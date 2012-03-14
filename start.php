@@ -17,7 +17,8 @@ function profile_completeness_init () {
     // Add css
     elgg_extend_view('css', 'profile_completeness/css');
     
-    elgg_register_widget_type('profile_completeness', elgg_echo('profile_completeness:widget:title'), elgg_echo('profile_completeness:widget:description'));
+	// @todo Is there really need for a widget?
+    //elgg_register_widget_type('profile_completeness', elgg_echo('profile_completeness:widget:title'), elgg_echo('profile_completeness:widget:description'));
 }
 
 elgg_register_event_handler('init','system','profile_completeness_init');
